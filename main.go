@@ -8,17 +8,17 @@ import (
 
 func main() {
 	searchParams := &client.SearchParams{
-		Affid:          "a43fb0f5c7454495183575ee2d75dcf3",
+		Affid:          "",
 		User_ip:        "111.222.234.123",
 		User_agent:     "careerjet-api-client-v3.0.1",
 		Locale_code:    "en_SG",
 		Location:       "singapore",
-		Keywords:       "python",
-		Sort:           "",
+		Keywords:       "python,java",
+		Sort:           "relevance",
 		Start_num:      "",
 		Pagesize:       "",
 		Page:           "",
-		Contracttype:   "",
+		Contracttype:   "p",
 		Contractperiod: "",
 	}
 	results, err := client.Search(searchParams)
